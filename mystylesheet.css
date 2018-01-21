@@ -1,0 +1,41 @@
+.mainheading{
+        text-align: center;
+}
+body {
+    margin-top: 100px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr2fagceXc6h5l0jbhuUNIpPlGyIuwLfJxPC14wMXNvsqt5s33);
+    background-size: cover;
+    font-family: arial;
+    color: white;
+    
+}
+ul {
+    margin:0px;
+    padding:0px;
+    list-style: none;
+}
+ul li{
+    float: left;
+    width:130px;
+    height:40px;
+    background-color: black;
+    opacity: .8;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+ul li a:hover {
+    background-color:pink;
+}
+
+ul li ul li {
+    display: none;
+}
+ul li:hover ul li {
+    display: block;
+}
