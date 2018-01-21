@@ -1,14 +1,13 @@
 .mainheading{
         text-align: center;
-<<<<<<< HEAD
 }
 body {
-    margin-top: 100px;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr2fagceXc6h5l0jbhuUNIpPlGyIuwLfJxPC14wMXNvsqt5s33);
+    margin-top: 40px;
+    background-image: url(http://images.all-free-download.com/images/graphicthumb/ice_glazed_tree_515286.jpg);
     background-size: cover;
+    background-position: center;
     font-family: arial;
     color: white;
-    
 }
 ul {
     margin:0px;
@@ -39,6 +38,4 @@ ul li ul li {
 }
 ul li:hover ul li {
     display: block;
-=======
->>>>>>> 2a3a7eb3d95c4b1476cc7550f8c270d5d9475d93
 }
