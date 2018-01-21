@@ -1,5 +1,6 @@
 .mainheading{
         text-align: center;
+<<<<<<< HEAD
 }
 body {
     margin-top: 100px;
@@ -38,4 +39,6 @@ ul li ul li {
 }
 ul li:hover ul li {
     display: block;
+=======
+>>>>>>> 2a3a7eb3d95c4b1476cc7550f8c270d5d9475d93
 }
