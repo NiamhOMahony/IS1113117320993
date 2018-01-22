@@ -3,20 +3,25 @@
 }
 body {
     margin-top: 40px;
-    background-image: url(https://s-media-cache-ak0.pinimg.com/236x/40/3d/df/403ddfeaa5c4735b97b390097e3350dc--wood-wallpaper-wallpaper-ideas.jpg);
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbXGkyNuBtqGbo1SoCWRj0zV0QOXRDhTzUxjB8mHzDV3QACt8MIQ) no-repeat;
     background-size: cover;
     background-position: center;
-    font-family: arial;
+    font-family: Snell Roundhand, cursive;
     color: white;
+    text-align: center;
+}
+h1{
+    color: black;
 }
 ul {
     margin:0px;
     padding:0px;
     list-style: none;
+    text-align: center;
 }
 ul li{
     float: left;
-    width:130px;
+    width:200px;
     height:40px;
     background-color: black;
     opacity: .6;
