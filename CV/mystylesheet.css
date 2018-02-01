@@ -1,0 +1,37 @@
+body{
+    margin-top: 40px;
+    background: linear-gradient(to right, rgba(224,156,54,1) 0%, rgba(255,0,132,0.65) 100%);
+    background-size: cover;
+    background-position: center;
+    font-family: Snell Roundhand, cursive;
+}
+.mainheading{
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+.details{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+.button{
+    margin-top: 30px;
+    margin-left:40px;
+    text-align:center;
+}
+.btn{
+    border: 1px solid white;
+    padding:10px 30px;
+    color:white;
+    text-decoration: none;
+    margin:5px;
+    font-size:18px;
+    text-transform: uppercase;
+    letter-spacing:2px;
+    border-radius:25px;
+    background: linear-gradient(to right, rgba(224,156,54,1) 0%, rgba(255,0,132,0.65) 100%);
+}
+.btnBack{
+    color: white;
+}

@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+header{
+    background-image:url(https://clairemca.files.wordpress.com/2016/03/sunset.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    margin-top:0px;
+}
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+    
+}
+.main-nav li{
+    display: inline-block;
+    margin:10px 5px;
+}
+.main-nav li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-family: sans-serif;
+    font-size: 15px;
+    letter-spacing:2px;
+    border-bottom: 1px solid white;
+}
+.main-nav .active a {
+    border: 1px solid white;
+}
+.main-nav li a:hover {
+    border:1px solid white;
+}
+.main-nav li ul{
+    display: none;
+}
+.mai-nav li a :hover li ul li{
+    display: block;
+}
+.logo img {
+    margin:10px 50px;
+    height:50px;
+    float:left;
+}
+body{
+    font-family: monospace;
+}
+.row{
+    background:rgba(0,0,0,0.5);
+    height:80px;
+    max-width: 1200px;
+    margin:auto;
+}
+.msg
+{
+    text-align:center;
+    font-family:sans-serif;
+    color:white;
+    top:200px;
+}
+h1{
+    color:white;
+    text-transform: uppercase;
+    font-size: 40px ;
+    position: relative;
+    text-align:center;
+    font-family:sans-serif;
+    top:200px;
+    margin-left:450px;
+    margin-right:0px;
+}
+.button{
+    margin-top: 270px;
+    margin-left:40px;
+    text-align:center;
+}
+.btn{
+    border: 1px solid white;
+    padding:10px 30px;
+    color:white;
+    text-decoration: none;
+    margin:20px;
+    font-size:18px;
+    text-transform: uppercase;
+    letter-spacing:2px;
+    border-radius:25px;
+    background: linear-gradient(to right, rgba(224,156,54,1) 0%, rgba(255,0,132,0.65) 100%);
+}
+.btnContact{
+   font-family:"roboto", sans-sreif; 
+}
+.btnContact:hover{
+    background-color:coral;
+}
+.btnExplore{
+   font-family:"roboto", sans-sreif; 
+}
+.btnExplore:hover{
+    background-color:coral;
+}
