@@ -1,13 +1,12 @@
 *{
     margin: 0px;
-    padding:0px;
+    padding: 0px;
 }
 header{
     background-image:url(https://clairemca.files.wordpress.com/2016/03/sunset.jpg);
     height: 100vh;
     background-size: cover;
-    background-position: center;
-    margin-top:0px;
+    background-position: center
 }
 .main-nav{
     float: right;
@@ -56,6 +55,7 @@ body{
 }
 .msg
 {
+    position:relative;
     text-align:center;
     font-family:sans-serif;
     color:white;
@@ -64,25 +64,22 @@ body{
 h1{
     color:white;
     text-transform: uppercase;
-    font-size: 40px ;
-    position: relative;
+    font-size: 60px ;
+    position:relative;
     text-align:center;
     font-family:sans-serif;
     top:200px;
-    margin-left:450px;
-    margin-right:0px;
 }
 .button{
-    margin-top: 270px;
+    margin-top: 30px;
     margin-left:40px;
-    text-align:center;
 }
 .btn{
     border: 1px solid white;
     padding:10px 30px;
     color:white;
     text-decoration: none;
-    margin:20px;
+    margin:5px;
     font-size:18px;
     text-transform: uppercase;
     letter-spacing:2px;
