@@ -1,3 +1,9 @@
+#section0{
+    background-image: url("https://clairemca.files.wordpress.com/2016/03/sunset.jpg");
+    background-size: cover;
+    background-position: center;
+    font-size: 60px;
+}    
 #section1{
     background-color: rgb(238, 0, 90);
 }
@@ -10,4 +16,42 @@
 .section{
     text-align:center;
     color:white;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.Button{
+     margin-top: 250px;
+    margin-left:40px;
+    text-align: center;
+}
+.btn{
+    border: 1px solid white;
+    padding:10px 30px;
+    color:white;
+    text-decoration: none;
+    margin:5px;
+    font-size:18px;
+    text-transform: uppercase;
+    letter-spacing:2px;
+    border-radius:25px;
+    background: linear-gradient(to right, rgba(224,156,54,1) 0%, rgba(255,0,132,0.65) 100%);
+}
+body{
+    background-image:url(https://clairemca.files.wordpress.com/2016/03/sunset.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.details{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    background: rgba(0,0,0,0.5);
+    margin-left:350px;
+    margin-right:350px;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 60px;
 }

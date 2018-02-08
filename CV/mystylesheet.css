@@ -1,8 +1,9 @@
 body{
     margin-top: 40px;
-    background: linear-gradient(to right, rgba(224,156,54,1) 0%, rgba(255,0,132,0.65) 100%);
+    background-image:url(https://clairemca.files.wordpress.com/2016/03/sunset.jpg);
     background-size: cover;
     background-position: center;
+    height: 100vh;
     font-family: Snell Roundhand, cursive;
 }
 .mainheading{
@@ -14,6 +15,9 @@ body{
     color: white;
     text-align: center;
     font-size: 25px;
+    background: rgba(0,0,0,0.5);
+    margin-left:350px;
+    margin-right:350px;
 }
 .button{
     margin-top: 30px;
@@ -34,4 +38,26 @@ body{
 }
 .btnBack{
     color: white;
+}
+#section0{
+    background-image: url("https://clairemca.files.wordpress.com/2016/03/sunset.jpg");
+    background-size: cover;
+    background-position: center;
+    font-size: 60px;
+}    
+#section1{
+    background-color: rgb(238, 0, 90);
+}
+#section2{
+     background-color: rgb(44, 62, 80);
+}
+#section3{
+     background-color: rgb(51, 153, 204);
+}
+#section4{
+    background-color: orange;
+}
+.section{
+    text-align:center;
+    color:white;
 }

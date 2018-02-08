@@ -6,7 +6,7 @@ header{
     background-image:url(https://clairemca.files.wordpress.com/2016/03/sunset.jpg);
     height: 100vh;
     background-size: cover;
-    background-position: center
+    background-position: center;
 }
 .main-nav{
     float: right;
@@ -33,12 +33,6 @@ header{
 .main-nav li a:hover {
     border:1px solid white;
 }
-.main-nav li ul{
-    display: none;
-}
-.mai-nav li a :hover li ul li{
-    display: block;
-}
 .logo img {
     margin:10px 50px;
     height:50px;
@@ -48,8 +42,7 @@ body{
     font-family: monospace;
 }
 .row{
-    background:rgba(0,0,0,0.5);
-    height:80px;
+    height:100px;
     max-width: 1200px;
     margin:auto;
 }
@@ -68,11 +61,12 @@ h1{
     position:relative;
     text-align:center;
     font-family:sans-serif;
-    top:200px;
+    top:280px;
 }
 .button{
-    margin-top: 30px;
+    margin-top: 300px;
     margin-left:40px;
+    text-align: center;
 }
 .btn{
     border: 1px solid white;
