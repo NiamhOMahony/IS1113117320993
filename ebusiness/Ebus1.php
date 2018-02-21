@@ -1,4 +1,4 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Select Product</title>
@@ -28,15 +28,15 @@
             </br>
             
             <lable for="subtotal">
-                Sub Total
-                <input type="Text" id="subtotal" value="0.00" readonly/>
+                SubTotal
+                <input type="Text" id="subtotal" name="subtotal" value="0.00" readonly/>
             </lable>
             
             </br>
         
-            <lable for="Total">
+            <lable for="total">
                 Total
-                <input type="Text" id="Total" value="0.00" readonly/>
+                <input type="Text" id="total"name="total" value="0.00" readonly/>
             </lable>
             
             </br>
@@ -48,5 +48,6 @@
         <button onClick="calcsub()">Calculate Cost</button>
         <a role="button" href="Ebus1.php">Clear Choice</a>
         
+        <a href="Ebus2.php" class="btn btn-dark">Pin Details</a>
     </body>
 </html>

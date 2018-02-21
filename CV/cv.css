@@ -5,6 +5,7 @@ body{
     background-position: center;
     height: 100vh;
     font-family: Snell Roundhand, cursive;
+    text-align: center;
 }
 .mainheading{
     color: white;
@@ -60,4 +61,11 @@ body{
 .section{
     text-align:center;
     color:white;
+}
+.pic{
+    border-radius: 35px;
+    height: 200px;
+    width: 200px;
+    margin-left: 600px;
+    margin-bottom: 30px;
 }

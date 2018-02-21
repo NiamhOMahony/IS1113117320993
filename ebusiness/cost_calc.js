@@ -1,11 +1,10 @@
 /* global $ */
 
-function calcsub(){
+function calcSub(){
+var argSubTotal;
     
-    var argSubTotal;
-    
-    if (document.getElementById('salesforce').checked) {
-        argSubTotal = 100;
+    if(document.getElementById("salesforce").checked){
+       argSubTotal = 100;
     }
     else {
         argSubTotal = 300;
@@ -21,8 +20,8 @@ function display(parm1){
 }
 
 function enablebtnProceed(){
-    $("#btnProceed").prop('disabled', false);
+    $("btnProceed").prop("disabled", false);
 }
 function disablebtnProceed(){
-    $("#btnProceed").prop('disabled', true);
+    $("btnProceed").prop("disabled", true);
 }
