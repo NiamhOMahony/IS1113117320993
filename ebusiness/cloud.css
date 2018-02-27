@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image:url(http://c2.peakpx.com/wallpaper/173/130/393/5k-wallpaper-preview.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.nav{
+    height:100px;
+    max-width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    margin:auto;
+    
+}
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+    
+}
+.main-nav li{
+    display: inline-block;
+    margin:10px 5px;
+}
+.main-nav li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-family: sans-serif;
+    font-size: 15px;
+    letter-spacing:2px;
+    border-bottom: 1px solid white;
+}
+.main-nav .active a {
+    border: 1px solid white;
+}
+.main-nav li a:hover {
+    border:1px solid white;
+}
+h1{
+    position:relative;
+    text-align:center;
+    font-family:sans-serif;
+    color:white;
+    text-transform: uppercase;
+    font-size: 60px ;
+    top:280px;
+}
