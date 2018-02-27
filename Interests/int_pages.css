@@ -3,6 +3,7 @@
     background-size: cover;
     background-position: center;
     font-size: 60px;
+    text-align: center;
 }    
 #section1{
     background-color: rgb(238, 0, 90);
@@ -12,15 +13,6 @@
 }
 #section3{
      background-color: rgb(51, 153, 204);
-}
-#section4{
-     background-image: url("http://hddesktopwallpapers.in/wp-content/uploads/2015/09/clouds-wallpaper-1080p-680x425.jpg")
-}
-#section5{
-     background-image: url("http://hddesktopwallpapers.in/wp-content/uploads/2015/09/clouds-wallpaper-1080p-680x425.jpg")
-}
-#section6{
-     background-image: url("http://hddesktopwallpapers.in/wp-content/uploads/2015/09/clouds-wallpaper-1080p-680x425.jpg")
 }
 .section{
     text-align:center;

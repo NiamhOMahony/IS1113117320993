@@ -1,27 +1,65 @@
 body{
-    margin-top: 40px;
     background-image:url(https://clairemca.files.wordpress.com/2016/03/sunset.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
-    font-family: Snell Roundhand, cursive;
+}
+
+.grid{
+    width:240px;
+    height:200px; 
+    margin:10px; 
+    margin-left: 70px;
+    float:left; 
+    text-align: center;
+    font-family: arial;
+    font-size: 14.5px;
+}
+
+.front{
+    position:absolute;
+    transform: perspective( 600px ) rotateY( 0deg );
+    background: linear-gradient(to right, rgba(255,234,0,1) 0%, rgba(255,0,132,1) 100%);
+    width:240px;
+    height:400px;
+    border-radius: 7px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s; 
+    font-size: 40px;
+    color: white;
+} 
+
+.back{
+    position:absolute;
+    transform: perspective( 600px ) rotateY( 180deg );
+    background:white;
+    width:240px;
+    height:400px;
+    border-radius: 7px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s; 
+} 
+
+.grid:hover > .front{
+    transform: perspective( 600px ) rotateY( -180deg );
+} 
+
+.grid:hover > .back{
+    transform: perspective( 600px ) rotateY( 0deg );
+}
+#header{
+    height: 130px;
+    background-color: rgba(149, 162, 188, 0.5);
+    color: white;
+    font-size: 100px;
     text-align: center;
 }
-.mainheading{
-    color: white;
-    text-align: center;
-    font-size: 60px;
-}
-.details{
-    color: white;
-    text-align: center;
-    font-size: 25px;
-    background: rgba(0,0,0,0.5);
-    margin-left:350px;
-    margin-right:350px;
+img{
+    border-radius: 50px;
+    margin:10px;
 }
 .button{
-    margin-top: 30px;
+    margin-top: 450px;
     margin-left:40px;
     text-align:center;
 }
@@ -37,35 +75,25 @@ body{
     border-radius:25px;
     background: linear-gradient(to right, rgba(224,156,54,1) 0%, rgba(255,0,132,0.65) 100%);
 }
+.mainheading{
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+.details{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(149, 162, 188,0.5);
+    margin-left:350px;
+    margin-right:350px;
+}
 .btnBack{
     color: white;
 }
-#section0{
-    background-image: url("https://clairemca.files.wordpress.com/2016/03/sunset.jpg");
-    background-size: cover;
-    background-position: center;
-    font-size: 60px;
-}    
-#section1{
-    background-color: rgb(238, 0, 90);
-}
-#section2{
-     background-color: rgb(44, 62, 80);
-}
-#section3{
-     background-color: rgb(51, 153, 204);
-}
-#section4{
-    background-color: orange;
-}
-.section{
-    text-align:center;
-    color:white;
-}
-.pic{
-    border-radius: 35px;
-    height: 200px;
-    width: 200px;
-    margin-left: 600px;
+
+#pic{
+    border-radius: 200px;
     margin-bottom: 30px;
+    margin-left: 600px;
 }
