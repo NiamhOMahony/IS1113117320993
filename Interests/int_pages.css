@@ -1,5 +1,5 @@
 #section0{
-    background-image: url("https://clairemca.files.wordpress.com/2016/03/sunset.jpg");
+    background-image: url("../homepage/sunset.jpg");
     background-size: cover;
     background-position: center;
     font-size: 60px;
@@ -53,4 +53,36 @@ h1{
     text-align: center;
     color: white;
     font-size: 60px;
+}
+.nav{
+    height:100px;
+    max-width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    margin:auto;
+    
+}
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+    
+}
+.main-nav li{
+    display: inline-block;
+    margin:10px 5px;
+}
+.main-nav li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-family: sans-serif;
+    font-size: 15px;
+    letter-spacing:2px;
+    border-bottom: 1px solid white;
+}
+.main-nav .active a {
+    border: 1px solid white;
+}
+.main-nav li a:hover {
+    border:1px solid white;
 }

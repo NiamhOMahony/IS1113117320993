@@ -3,7 +3,8 @@
     padding: 0px;
 }
 body{
-    background-image:url(http://c2.peakpx.com/wallpaper/173/130/393/5k-wallpaper-preview.jpg);
+    background-image:url(cliff.jpg);
+    z-index: 1;
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -43,9 +44,63 @@ body{
 h1{
     position:relative;
     text-align:center;
-    font-family:sans-serif;
-    color:white;
+    font-family:Snell Roundhand, cursive;
+    color:black;
     text-transform: uppercase;
     font-size: 60px ;
     top:280px;
+}
+img{
+    border-radius: 200px;
+    height: 300px;
+    width: 300px;
+    white-space: nowrap;
+    z-index: 7;
+    
+}
+#box1{
+    height: 250px;
+    width: 220px;
+    float: left;
+    margin-left: 90px;
+    margin-top: 90px;
+}
+#box2{
+    height: 250px;
+    width: 220px;
+    float: left;
+    margin-left: 90px;
+    margin-top: 90px;
+}
+#box3{
+    height: 250px;
+    width: 220px;
+    float: right;
+    margin-right: 90px;
+    margin-top: 90px;
+}
+#box4{
+    height: 250px;
+    width: 220px;
+    float: right;
+    margin-right: 90px;
+    margin-top: 90px;
+}
+p{
+    text-align: center;
+}
+.aboutaws{
+    font-size: 25px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+.heading{
+    font-size: 60px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 100px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
 }

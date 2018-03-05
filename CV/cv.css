@@ -1,8 +1,8 @@
 body{
-    background-image:url(https://clairemca.files.wordpress.com/2016/03/sunset.jpg);
+    background-image:url(../homepage/sunset.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 100%;
 }
 
 .grid{
@@ -48,18 +48,14 @@ body{
     transform: perspective( 600px ) rotateY( 0deg );
 }
 #header{
-    height: 130px;
-    background-color: rgba(149, 162, 188, 0.5);
     color: white;
-    font-size: 100px;
+    font-size: 60px;
     text-align: center;
 }
 img{
     border-radius: 50px;
-    margin:10px;
 }
 .button{
-    margin-top: 450px;
     margin-left:40px;
     text-align:center;
 }
@@ -91,14 +87,13 @@ img{
 .btnBack{
     color: white;
 }
-
 #pic{
     border-radius: 200px;
     margin-bottom: 30px;
     margin-left: 600px;
 }
 .nav{
-    height:100px;
+    height:90px;
     max-width: 100%;
     background-color: rgba(0,0,0,0.5);
     margin:auto;
@@ -107,10 +102,10 @@ img{
 .main-nav{
     float: right;
     list-style: none;
-    margin-top: 20px;
+    margin-top: 15px;
     
 }
-.main-nav li{
+.main-nav li{     
     display: inline-block;
     margin:10px 5px;
 }
@@ -128,4 +123,16 @@ img{
 }
 .main-nav li a:hover {
     border:1px solid white;
+}
+.salesforce {
+    text-align: justify;
+    width:200px;
+}
+
+.salesforce img {
+    display: block;
+    margin: 0 auto;
+}
+.CV3buttons{
+    margin-top: 450px;
 }
