@@ -1,12 +1,10 @@
 /* global $ */
 
-// declaring variables
     var argSubTotal;
-    var argVatAmt;
-    var argDiscountAmt;
+    var argVat;
+    var argDiscount;
     var argTotalPrice;
 
-// making a function to calculate cost depending on which cloud service is checked
 function calcSub(){
     
       if(document.getElementById('salesforce').checked) {
@@ -28,17 +26,31 @@ function calcSub(){
 calcDisVatTotal();
 }
 
-//function to calculate vat discount and total price which was called from the last function
  function calcDisVatTotal(parmSubTotal){
    
-    argDiscountAmt = argSubTotal * 0.05;
-    argVatAmt = (argSubTotal - argDiscountAmt) * .10;
-    argTotalPrice = (argSubTotal - argDiscountAmt) + argVatAmt;
-   
-display(argSubTotal, argVatAmt, argDiscountAmt, argTotalPrice)
+    
+     if(document.getElementById('salesforce').checked) {
+    argDiscount = 100 * 0.05;
+    argVat = (100 - argDiscount) * 0.10;
+    argTotalPrice = ((100 -argDiscount) + argVat);
+    
+ } else if(document.getElementById('aws').checked) { 
+    argDiscount = 300 * 0.05;
+    argVat = (300 - argDiscount) * 0.10;
+    argTotalPrice = ((300 - argDiscount) + argVat);
+    
+ } else if(document.getElementById('gmail').checked) {
+    argDiscount = 400 * 0.05;
+    argVat = (400 - argDiscount) * 0.10;
+    argTotalPrice = ((400 - argDiscount) + argVat);
+ } else {  
+    argDiscount = 200 * 0.05;
+    argVat = (200 - argDiscount) * 0.10;
+    argTotalPrice = ((200 - argDiscount) + argVat);
+ }
+display(argSubTotal, argVat, argDiscount, argTotalPrice)
 }
 
-// displaying our output
 function display(parm1, parm2, parm3, parm4){
     document.getElementById("subtotal").value = parm1;
     document.getElementById("vat").value = parm2;
@@ -47,7 +59,6 @@ function display(parm1, parm2, parm3, parm4){
     
     enablebtnProceed();
 }
-// validating user input
 function validateForm() {
     var x = document.forms["myForm"]["fullname"].value;
     if (x == "") {
@@ -65,7 +76,7 @@ var z = document.forms["myForm"]["address"].value;
         return false;
 }
 }
-// enabling the proceed to ebus2 page
+
 function enablebtnProceed(){
     $('#btnProceed').prop('disabled', false);
 }

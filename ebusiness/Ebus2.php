@@ -2,7 +2,6 @@
 //start the session
 session_start();
 ?>
-    
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,7 +11,10 @@ session_start();
         
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+        
         <style>
+        
         body{
             background-image:url(stars.jpg);
             z-index: 1;
@@ -21,7 +23,7 @@ session_start();
             background-position: center;
         }
         .nav{
-        height:100px;
+        height:80px;
         max-width: 100%;
         background-color: rgba(0,0,0,0.5);
         margin:auto;
@@ -53,11 +55,10 @@ session_start();
             border:1px solid white;
         }
         h4{
-            font-size:40px;
             text-align:center;
         }
         form{
-            font-size: 30px;
+            font-size: 17.5px;
         }
         button{
             text-align: center;
@@ -66,29 +67,21 @@ session_start();
             text-decoration: none;
             margin:5px;
             font-size:18px;
-            background-color: pink;
+            background-color:pink;
         }
-        .buttons{
-            text-align:center;
+        
+        /* Centered text */
+        .centered {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-style: sans-serif;
         }
-        label{
-            display:inline-block;
-            width:90px;
-            margin-right:10px;
-            text-align:right;
-        }
-        fieldset{
-            border:none;
-            width:500px;
-            margin:0px auto;
-        }
-            
         </style>
         
-    </head>
-    <body>
         
-        <div class="nav">
+         <div class="nav">
             <ul class="main-nav">
                 <li><a href="..//clodhome.html">Home</a></li>
                 <li><a href="about.html">About Cloud</a> </li>
@@ -99,86 +92,58 @@ session_start();
         </div>
         
         <center>
-        
-        <h4>Please enter your payment details.</h4>
-        
-            <br/>
-             <!-- creating a form -->
+            <h3>Please enter your details</h3>
+            </br>
             
-            <form method = "POST" action = "Ebus3.php">
-                
-               </br>
-                <!-- applying placeholders and maxlengths -->
-                
-                <label for="user_card">
-                    Card Number
-                </label>
-                
-                <input type="text" id="user_card" placeholder="Card Number" maxlength="16">
-                
-                <br>
-                
-                <label for="user_cvv">
-                    Card CVV
-                </label>
-                
-                <input type="text" id="user_cvv" placeholder="CVV" maxlength="3">
-                
-                
-                
-                </br>
-                
-                <label for="user_pin">
-                    Card PIN 
-                </label>
-                
-                <input type="password" id="user_pin" placeholder="Card Pin" maxlength="4">
-                
-                </br>
-                </br>
-                <button type="Submit" id="btnPurchase" disabled> 
-                    Proceed with Purchase 
-                </button>
+            
+            
+            
+             <form name = "myForm"  method="POST" action="Ebus3.php">
+                    <br>
+                    <label for = "name">
+                        <strong>  Name:</strong>
+                        <br>
+                        <input type ='text' id ="name" name = "name"/>
+                    </label>
+                    <br><br>
+                    <label for "email">
+                        <strong> Email:</strong>
+                        <br>
+                        <input type = "email" id ="email" name="email"/>
+                    </label>
+                    <br><br>
+                    
+                    <label for="user_number"><strong>Card Number</strong></label>
+                    <br>
+                     <input type = "user_number" id ="user_number" name="user_number" maxlength="16"/>
                
+                <br><br>
+                <label for="user_pin">
+                     PIN 
+                </label>
+                
+                    <label for="user_pin"><strong>PIN:</strong></label>
+                    <br>
+                   <input type="password" id="user_pin" placeholder="Card PIN" maxlength="4">
+                    <br><br><br>
+                <button type="submit" id="btnPurchase" disabled>Proceed with Purchase</button>
+              
             </form>
+           
             
             <br/>
             
-             <!-- button that calls on the function calidateDetails() -->
-             
-            <button onClick="validateDetails()"> Validate </button>
-            <div align="center">
-                 <!-- footer -->
-            <div class="footer">
-            <center> <a href="../homepage.html" onClick="Alert()" class="btn-cancel">Cancel Payment</a></center>
-            <br>
-            <br>
-        </div>
-        </div>
-            
+            <center>
+            <button onClick="validateDetails()">Validate</button>
+          
+            <?php
+            //set session variable 
+            $_SESSION["total"]=$_POST["total"];
+           
+            ?>
+        
         <script type="text/javascript" src="ebus2_validator.js"></script>
         
-        </center>
-        
-        <?php
-        // Set session variables
-        $_SESSION["fullname"] = $_POST["fullname"];
-        $_SESSION["total"] = $_POST["total"];
-        $_SESSION["email"] = $_POST["email"];
-        $_SESSION["address"] = $_POST["address"];
-       
-        
-        ?>
-         <!-- alert function that was called on the cancel payment button -->
-       <script>
-       
-  function Alert() {
-    alert("Your purchase has been cancelled");
-}
-</script>
-
-    
     </body>
-           
     
-</html>   
+</html>

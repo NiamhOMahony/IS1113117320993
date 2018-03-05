@@ -2,12 +2,12 @@
 <html>
     <head>
         <title>Select Product</title>
-        <!--jQuery-->
-        <script scr="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="cost_calc.js"></script>
         
-        <style>
-        body{
+        
+        <script type="text/javascript" src="cost_calc.js"></script>
+   
+      <style>
+      body{
             background-image:url(stars.jpg);
             z-index: 1;
             height: 100vh;
@@ -15,7 +15,7 @@
             background-position: center;
         }
         .nav{
-        height:100px;
+        height:80px;
         max-width: 100%;
         background-color: rgba(0,0,0,0.5);
         margin:auto;
@@ -50,8 +50,7 @@
             text-align:center;
         }
         form{
-            margin-left:500px;
-            font-size: 20px;
+            font-size: 17.5px;
         }
         button{
             text-align: center;
@@ -62,13 +61,13 @@
             font-size:18px;
             background-color:pink;
         }
-            
-        </style>
-        
+    </style>
+    
     </head>
-    <body>
-        
-        <div class="nav">
+       
+        <center>
+       
+       <div class="nav">
             <ul class="main-nav">
                 <li><a href="..//clodhome.html">Home</a></li>
                 <li><a href="about.html">About Cloud</a> </li>
@@ -78,26 +77,11 @@
             </ul>
         </div>
         
-        <form name="myForm" method="POST" onsubmit="return validateForm()" action="Ebus2.php">
-            <h3>Enter your personal details</h3>
-                <label for="fullname">
-                F.Name
-                <input type="text" id="fullname" name="fullname" placeholder="FullName"/>
-            </label>
-            </br>
-              <label for="email">
-                     E-mail 
-                <input type="email" name="email" placeholder="Email">
-                </label>
-                </br>
-                 <label for="address">
-                    Address
-                <input type="text" name="address" placeholder="Address">
-                </label>
-            
-            </br>
-            </br>
-            <h4>Select a product</h4>
+        <h1>Order Form</h1>
+        
+          <form name="myForm" method="POST" onsubmit="return validateForm()" action="Ebus2.php">
+        
+            <h3>Select a product</h3>
             
            
             
@@ -106,14 +90,17 @@
                 SalesForce @ $100
             </label>
             
-            <br/>
+             </br>
+              </br>
             
              <label for="cloud">
                 <input type="radio" id="cloud" name="product" onclick="disablebtnProceed()"/>
                 Cloud9 @ $200
             </label>
             
-            </br>
+          
+              </br>
+                </br>
             
             <label for="aws">
                 <input type="radio" id="aws" name="product" onclick="disablebtnProceed()"/>
@@ -122,36 +109,37 @@
             
             
             </br>
-            
+              </br>
              <label for="gmail">
                 <input type="radio" id="gmail" name="product" onclick="disablebtnProceed()"/>
                 Gmail @ $250
             </label>
             
-            <br/>
-            <br/>
+              </br>
+         </br>
             
-             <!-- readonly textboxes -->
             <label for="subtotal">
                 Sub Total
                 <input type="text" id="subtotal" name="subtotal" value="0.00" readonly/>
             </label>
-            
-            <br/>
+          </br>
+            </br>
             
              <label for="discount">
-                Discount @ 5%
+              Discount @ 5%
                 <input type="text" id="discount" name="discount" value="0.00" readonly/>
             </label>
             
               </br>
+                </br>
               
             <label for="vat">
-                V.A.T @ 10%
+               Vat @ 10% 
                 <input type="text" id="vat" name="vat" value="0.00" readonly/>
             </label>
             
             </br>
+              </br>
             
             <label for="total">
                 Total
@@ -167,10 +155,11 @@
         </form>
         
         <br/>
-         <!-- buttons including a button that when clicked calls a function calcSub() -->
         <button onClick="calcSub()">Calculate Cost</button>
         <a role="button" href="Ebus1.php">Clear Choice</a>
+        
         </center>
+       
         
     </body>
 </html>

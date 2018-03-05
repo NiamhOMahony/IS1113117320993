@@ -1,23 +1,31 @@
 <?php
 session_start();
+$name = $_REQUEST['name'];
+$email =$_REQUEST['email'];
 ?>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>RECEIPT</title>
-        <!-- applying font size and style -->
+        <title> Receipt</title>
         
-    <style>
-        
-    body{
+         <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="number.js"></script>
+      
+      <style>
+      body{
             background-image:url(stars.jpg);
             z-index: 1;
             height: 100vh;
             background-size: cover;
             background-position: center;
         }
+        .details{
+            font-size:20px;
+            text-align:center;
+        }
         .nav{
-        height:100px;
+        height:80px;
         max-width: 100%;
         background-color: rgba(0,0,0,0.5);
         margin:auto;
@@ -48,11 +56,36 @@ session_start();
         .main-nav li a:hover {
             border:1px solid white;
         }
-        </style>
-    </head>
-    <body>
+        button{
+            text-align: center;
+            border: 1px solid white;
+            color:white;
+            text-decoration: none;
+            margin:5px;
+            font-size:18px;
+            background-color:pink;
+        }
+        .container{
+            display:inline;
+        }
+        .container1{
+             top:0%;
+          width:100%;
+          height:250%;
+        }
+        /* Centered text */
+        .centered {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-style: sans-serif;
+        }
+  </style>
+     </head>
+    <body style="background-color:lightgrey;">
         
-        <div class="nav">
+         <div class="nav">
             <ul class="main-nav">
                 <li><a href="..//clodhome.html">Home</a></li>
                 <li><a href="about.html">About Cloud</a> </li>
@@ -62,43 +95,20 @@ session_start();
             </ul>
         </div>
         
-        
         <center>
-        <u><h4>RECEIPT</h4></u>
-      
-     <!-- displaying variables that were posted from previous pages -->
-        <?php
-        // Echo session variables that were set on previous page
-        echo"Name is " . $_SESSION["fullname"] . ".";
-        echo "</br> ";
-         echo "</br> ";
-          echo "</br> ";
-        echo"Email is " . $_SESSION["email"] . ".";
-        echo "</br> ";
-         echo "</br> ";
-          echo "</br> ";
-        echo"Address is " . $_SESSION["address"] . ".";
-        echo "</br> ";
-         echo "</br> ";
-          echo "</br> ";
-        echo"Total is $" . $_SESSION["total"];
+            <Stong><h1>Receipt</h1></Stong></center>
         
+        <div class="details">
+             <?php
+            //Echo session varaibles that were set to the previous page
+        echo("<strong>Name: </strong>". $name);
+        echo("<br><strong>Email: </strong>". $email);
+        echo "<br><strong>Total: $</strong>" .$_SESSION["total"] ;
         ?>
-     </center>    
-    <br>
-    <br>
-    <center>
-       <!-- a button that alllows us to print by calling a function -->
-    <a href="" onclick="Print()" class="btn-home">Print Receipt</a></center>
-    </center>
-
-<script>
-function Print() {
-    window.print();
-}
-</script>
-   <!-- button to homepage -->
-    <center> <a href="../homepage.html" class="btn-home">Return to the HomePage</a></center>
-   
+        </div>
+        
+        </div>
+        </center>
+        
     </body>
-</html>
+    </html>
