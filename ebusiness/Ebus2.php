@@ -11,9 +11,8 @@ session_start();
         
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    </head>
         
-        <style>
+         <style>
         
         body{
             background-image:url(stars.jpg);
@@ -76,18 +75,20 @@ session_start();
         top: 20%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-style: sans-serif;
         }
         </style>
+    </head>
+        
+    <body>
         
         
-         <div class="nav">
+        <div class="nav">
             <ul class="main-nav">
-                <li><a href="..//clodhome.html">Home</a></li>
-                <li><a href="about.html">About Cloud</a> </li>
-                <li><a href="a">Products</a></li>
-                <liclass="active"><a href="Ebus1.php">Buy Now</a></li>
-                <li><a href="..//homepage/homepage.html">IS1113 Project</a></li>
+                <li><a href="clodhome.html">Home</a></li>
+                <li><a href="about.html">About Us</a> </li>
+                <li><a href="products.html">Products</a></li>
+                <li class="active"><a href="Ebus1.php">Buy Now</a></li>
+                <li><a href="..//homepage.html">IS1113 Project</a></li>
             </ul>
         </div>
         

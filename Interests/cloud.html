@@ -1,14 +1,16 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title>Travel</title>
-        <link rel="stylesheet" href="../mystylesheet.css" type="text/css" />
+        <title>Cloud</title>
+      
         <link rel="stylesheet" href="int_pages.css" type="text/css" />
-        
+        <link rel="stylesheet" href="int_pages2.css" type="text/css" />
+     
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
         
         <!--Page Pilling-->
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.css" />
@@ -21,48 +23,95 @@
     	$('#pagepiling').pagepiling();
         });
         </script>
+        <!-- styling the body to align text in the center and to be certain distance from right and left -->
+        <style>
+        body {
+            text-align: center;
+        }
+.ex1 {
+    margin-right: 250px;
+    margin-left: 250px;
+}
+</style>
     </head>
-    <body>
-        
-        <div class="nav">
-            <ul class="main-nav">
-                <li class="active"><a href="../homepage/homepage.html">Home</a></li>
-                <li><a href="../CV/cv_page1.html">CV</a> </li>
-                <li><a href="../Interests/sports.html">Interests</a></li>
-                <li><a href="../ebusiness/Ebus1.php">EBus</a></li>     
-                <li><a href="https://github.com/NiamhOMahony/IS1113117320993">GitHub</a></li>
-            </ul>
-        </div>
-       
-       <div id="pagepiling">
-           
-    <div class="section" id="section0">
-        Cloud Services
-    </div>   
     
-	<div class="section" id="section1">
-	    <p><strong>Cloud 9</strong>This is an online integrated development enviroment (IDE). It supports a lot of programming languages such a HTML PHP,JavaScript, Python, C, C++ and Ruby. It enables developers to get started with coding immediately with pre-configured workspaces, collaborate with their peers with collaborative coding features, and web development features like live preview and browser compatibility testing.</p>
-        <p><strong>Developer:</strong> Amazon Web Services</p>
-        <P>We are using cloud 9 for this project mainly using html, PHP and JavaScript</P>
-	</div>
-	
-	<div class="section" id="section2">
-	    <p><strong>Salesforce:</strong> this is a web based hosting sevice. it is mainly used for computer code. it offers both private and public repositorys. it has almost 20 million users and 57 million repositorys. This makes it the largest host of source code in the world </p>
-        <p><strong>Founders:</strong> Tom Preston-Werner, Chris Wanstrath and PJ Hyett</p>
-        <p>We are using GitHub to hold our source code for our projects</p>
+    <body>
+     <!-- images with and div style and changing font styles -->
+       <div id="pagepiling">
 
+		<div class="section" id="section1">
+	    	<p>Cloud Services</p>
+		</div>
+		
+		<div class="section" id="section2">
+	    	<p>Cloud Services</p>
+			<p>Cloud services covers a wide range of resources that a service provider delivers to customers via the internet, which, 
+			in this context, has broadly become known as the cloud. Characteristics of cloud services include self-provisioning and 
+			elasticity; that is, customers can provision services on an on-demand basis and shut them down when no longer necessary.
+			Cloud computing drives down costs and can moving your business from a capital-intensive cost model to an Opex model. Cloud
+			computing is very safe and efficient. </p>
+		</div>
+	
+		<div class="section" id="section3">
+	    	<strong><a href="https://www.salesforce.com/eu/products/what-is-salesforce/" style="color: black"> Software as a Service (SaaS) - Salesforce</a></strong>
+	    
+	    <br>
+	    
+	     	<img src="https://axeos.com/wp-content/uploads/2017/04/salesforcelogo.png" height="200" width="200" alt="image">
+    
+			<p>Software as a service is a software licensing and delivery model in which software is licensed on a subscription basis and is 
+			centrally hosted. Salesforce is the world’s #1 Customer Relationship Management (CRM) platform. Our cloud-based applications for 
+			sales, service, marketing, and more don’t require IT experts to set up or manage.</p>
+		</div>
+	
+	<div class="section" id="section4">
+	    <strong><a href="https://en.wikipedia.org/wiki/Cloud9_IDE" style="color: black"><font size="30">Platform as a Service (PaaS) - Cloud 9</font></a></strong>
+	    <br>
+	    <a href="https://aws.amazon.com/cloud9/" >
+           <span title="Cloud9"> <img src="https://static.c9.io/nc-3.1.4109-2ffb85e2-wf/static/plugins/c9.profile/static/images/cloud9-logo.svg" height="200" width="200" alt="image"></span>
+        </a>
+	
+			<p>Platform as a Service (PaaS) is a category of cloud computing services that provides a platform allowing customers to develop,
+			run, and manage applications without the complexity of building and maintaining the infrastructure typically associated with 
+			developing and launching an app. AWS Cloud9 contains a collection of tools that you use to code, build, run, test, debug, and
+			release software in the cloud.
+			IDE offers a rich code-editing experience with support for several programming languages and runtime debuggers, as well as a
+			built-in terminal. You can configure the IDE to your preferences.</p>
+		</div>
+		
+	<div class="section" id="section5">
+	    <strong><a href="https://aws.amazon.com/free/?sc_channel=PS&sc_campaign=acquisition_UK&sc_publisher=google&sc_medium=cloud_computing_b&sc_content=aws_spell_p&sc_detail=amazon%20webservices&sc_category=cloud_computing&sc_segment=188865186626&sc_matchtype=p&sc_country=UK&s_kwcid=AL!4422!3!188865186626!p!!g!!amazon%20webservices&ef_id=Wo-mbAAAALOtbza8:20180223101315:s" style="color: black"><font size="30">Infrastructure as a Service (IaaS) - Amazon</font></a></strong>
+	<br>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/AmazonWebservices_Logo.svg/2000px-AmazonWebservices_Logo.svg.png" height="200" width="200" alt="image">
+	<p>Infrastructure as a service (IaaS) refers to online services that provide high-level APIs used to dereference various low-level 
+	details of underlying network infrastructure like physical computing resources, location, data partitioning, scaling, security, 
+	backup etc. Amazon (Amazon.com) is the world’s largest online retailer and a prominent cloud services provider. 
+	The company was originally a book seller but has expanded to sell a wide variety of consumer goods and digital media as well as its
+	own electronic devices, such as the Kindle e-book reader, Kindle Fire tablet and Fire TV, a streaming media adapter.
+	Amazon Web Services(AWS) is a comprehensive, evolving cloud computing platform. </p>
 	</div>
 	
-	<div class="section" id="section3">
-	    <p><strong>Amazon Web Services:</strong> This is a cloud platform service that supports several programming languages. It is one of the first cloud platforms and has been in development since 2007. </p>
-        <p><strong>Founders:</strong>James Lindenbaum, Adam Wiggins and Orion Henry</p>
-        <p>We are using Heroku to host our projects</p>
+	   <div class="section" id="section6">
+
+	    <strong><a href="http://searchmicroservices.techtarget.com/definition/Gmail" style="color: black"><font size="30">Communication as a Service (CaaS) - Gmail</font></a></strong>
+	     <br>
+	  
+        <img src="https://images.sftcdn.net/images/t_optimized,f_auto/p/d7103314-9b25-11e6-b424-00163ed833e7/2023611020/gmail-mobile-logo.png" height="200" width="200" alt="image">
+       
+	    <p>Communications as a Service (CaaS) provides Software as a Service (SaaS) for communications. Gmail is a free, 
+	    advertising-supported email service developed by Google. Users can access Gmail on the web and using third-party programs that 
+	    synchronize email content through POP or IMAP protocols. Gmail started as a limited beta release on April 1, 2004, and ended its 
+	    testing phase on July 7, 2009.</p>
 	   
-	    <br/>
-	    
-	    <a href="cloud.html" class="btn btnBack">Back</a>
-	    <a href="../homepage/homepage.html" class="btn btn-success">Home</a>
+	    <br>
+	    <br>
+	    <!-- button to the next page -->
+	    <a href="../homepage.html" class="btn btn-Travel">Homepage</a>
+	    <br>
+	    <br>
 	   </div>
 	   </div>
-    </body>
+	  </div>
+	   </body>
+    
 </html>

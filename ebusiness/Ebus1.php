@@ -3,8 +3,10 @@
     <head>
         <title>Select Product</title>
         
-        
+        <!--jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src="cost_calc.js"></script>
+  
    
       <style>
       body{
@@ -64,23 +66,22 @@
     </style>
     
     </head>
-       
-        <center>
-       
+    <body>
+    
        <div class="nav">
             <ul class="main-nav">
-                <li><a href="..//clodhome.html">Home</a></li>
-                <li><a href="about.html">About Cloud</a> </li>
-                <li><a href="a">Products</a></li>
-                <liclass="active"><a href="Ebus1.php">Buy Now</a></li>
-                <li><a href="..//homepage/homepage.html">IS1113 Project</a></li>
+                <li><a href="clodhome.html">Home</a></li>
+                <li><a href="about.html">About Us</a> </li>
+                <li><a href="products.html">Products</a></li>
+                <li class="active"><a href="Ebus1.php">Buy Now</a></li>
+                <li><a href="..//homepage.html">IS1113 Project</a></li>
             </ul>
         </div>
-        
+        <center>
         <h1>Order Form</h1>
         
           <form name="myForm" method="POST" onsubmit="return validateForm()" action="Ebus2.php">
-        
+        <center>
             <h3>Select a product</h3>
             
            

@@ -1,18 +1,24 @@
-#section0{
-    background-image: url("../homepage/sunset.jpg");
+#section1{
+    background-image: url("../sunset.jpg");
     background-size: cover;
     background-position: center;
     font-size: 60px;
     text-align: center;
 }    
-#section1{
+#section2{
     background-color: rgb(238, 0, 90);
 }
-#section2{
+#section3{
      background-color: rgb(44, 62, 80);
 }
-#section3{
-     background-color: rgb(51, 153, 204);
+#section4{
+     background-color: rgb(51, 153, 74);
+}
+#section5{
+     background-color: rgb(51, 153, 20);
+}
+#section6{
+     background-color: rgb(514, 153, 204);
 }
 .section{
     text-align:center;
@@ -85,4 +91,52 @@ h1{
 }
 .main-nav li a:hover {
     border:1px solid white;
+}
+.details{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgba(149, 162, 188,0.5);
+    margin-left:350px;
+    margin-right:350px;
+}
+#box1{
+    background-image:url(http://www.roperpropertieslanzarote.com/wp-content/uploads/2017/06/Lanzarote-image.jpg);
+    height: 300px;
+    width: 300px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 90px;
+    background-size: cover;
+    background-position: center;
+    font-size:30px;
+    text-align:center;
+}
+#box2{
+background-image:url(https://lonelyplanetimages.imgix.net/mastheads/GettyImages-538096543_medium.jpg?sharp=10&vib=20&w=1200);
+ height: 300px;
+    width: 300px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 90px;
+    background-size: cover;
+    background-position: center;
+    font-size:30px;
+    text-align:center;
+}
+#box3{
+    background-image:url(https://corkenglishcollege.ie/media/9a0931a3-4dbc-4cd1-8bfe-fe24869c8389/Blogs/Cork%20Vs%20Dublin_jpg);
+     height: 300px;
+    width: 300px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 90px;
+    background-size: cover;
+    background-position: center;
+    font-size:30px;
+    text-align:center;
+}
+.BUTTONS{
+    margin-top:500px;
+    text-align:center;
 }
